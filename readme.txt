@@ -27,8 +27,17 @@ DISKPART>  exit
 
 x:\ d:
 
+D:\> dir
+    //az utóbbi két paranccsal ellenőrizhetek minden particiót, hogy mit is tartalmaz
+
+D:/>DISM /Get-ImageInfo /imagefile:c:\sources\install.wim
+    //lekérdezem a telepítendő windows image filjának tartalmát és kiválasztoma  megfelelő indexet (pl. 6 - Win.11Pro)
+
 D:\>DISM /apply-image /imagefile:C:\sources\install.wim /index:6 /applydir:d:\
+    //jelen esetben a C: a windows forrásparticiója a D: pedig a telepítendő célpartició
 
 D:\>bcdboot c:
+    // C: - forráspartició
 
 D:\>bcdboot d:\Windows /s D:
+    //D: - célpartició
