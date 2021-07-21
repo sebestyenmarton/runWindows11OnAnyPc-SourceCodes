@@ -3,7 +3,7 @@ Install Windows 11 pro
 
 In this repository i write some source code thet help you to install windows11pro in any PC.
 
-Install windows 11 with pendrive and when install itt and not work, press on the keyboard:
+Install windows 11 pro with pendrive and when install itt and not work, press on the keyboard:
 
   shift + F10
 
